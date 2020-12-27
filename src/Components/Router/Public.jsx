@@ -1,11 +1,14 @@
 import { Fragment } from "react";
-import { Route } from "react-router-dom";
+import { Switch ,Route } from "react-router-dom";
 
 function Public({ children, ...props }) {
   
   return(
     <Fragment>
-      <Route {...props} /> 
+      <Switch>
+        <Route { ...props } /> 
+      </Switch>
+
     </Fragment>
   )
 }
