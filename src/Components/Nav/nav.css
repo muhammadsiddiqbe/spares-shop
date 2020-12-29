@@ -1,0 +1,33 @@
+nav {
+  border-top: 1px solid rgb(0, 0, 0, .1);
+  border-bottom: 1px solid rgb(0, 0, 0, .1);
+}
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav__list a {
+  display: inline-block;
+  padding: 15px 0 !important;
+}
+
+.site-nav__list a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #48494D;
+  text-shadow: 0 0 0 transparent;
+}
+
+.site-nav__list a:hover {
+  text-decoration: underline;
+}
+
+.nav_item--active {
+  box-shadow: 0 3px 0 #FF7931;
+  font-weight: bold;
+}

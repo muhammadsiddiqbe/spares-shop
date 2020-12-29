@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 34px 0;
+}
+
+.header-list {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: #48494D;
+  margin-right: 50px;
+}
+
+.header-list a:hover {
+  color: rgb(7, 73, 77, .8);
+}
+
+.location-link {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  color: #48494D;
+}
+
+.user-panel__btn {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.user-panel li {
+  margin-right: 15px;
+}
+
+.user-panel li:last-child {
+  margin: 0;
+}
+
+.user-modal {
+  position: absolute;
+  top: 150%;
+  /* bottom: -100%; */
+  left: 0;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.4);
+}

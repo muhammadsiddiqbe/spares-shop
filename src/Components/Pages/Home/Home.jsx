@@ -1,10 +1,10 @@
-import { Fragment } from "react"
-
+import { Fragment } from "react";
 
 function HomePage() {
-  return (
+  
+  return(
     <Fragment>
-      <h1 className="center">Home</h1>
+      <h1 className='center'>Home page</h1>
     </Fragment>
   )
 }

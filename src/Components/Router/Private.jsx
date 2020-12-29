@@ -1,12 +1,8 @@
-import { Fragment } from "react";
 import { Route } from "react-router-dom";
 
-function Private({ children, }) {
-  
+function Private({ children, ...props }) {
   return(
-    <Fragment>
-      <h1>Private</h1>
-    </Fragment>
+    <Route {...props} />
   )
 }
 
