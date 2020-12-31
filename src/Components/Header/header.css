@@ -51,11 +51,18 @@ header {
 }
 
 .user-modal {
+  min-width: 150px;
+  display: none;
   position: absolute;
   top: 150%;
   /* bottom: -100%; */
-  left: 0;
+  left: 100%;
+  transform: translateX(-50%);
   background-color: #fff;
-  padding: 30px;
+  padding: 20px 10px;
   box-shadow: 0 0 3px rgb(0, 0, 0, 0.4);
+}
+
+.modal-activator .user-modal {
+  display: block;
 }

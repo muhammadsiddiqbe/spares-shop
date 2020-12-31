@@ -1,5 +1,5 @@
-import { Fragment } from "react"
-import { Link, Route, Switch } from "react-router-dom"
+import { Fragment, useRef } from "react"
+import { Link } from "react-router-dom"
 
 import './header.css'
 import Logo from "../../img/logo.svg"
@@ -10,7 +10,17 @@ import BookedThings from "../../img/booked-things-logo.svg"
 
 import Nav from "../Nav/nav"
 
+
 function Header() {
+  const userModalOpenerBtn = useRef()
+  
+
+  function openUserModal(evt) {
+    console.log(evt.target)
+
+    userModalOpenerBtn.current.classList.toggle('modal-activator')
+  }
+
   
   return(
     <Fragment>
@@ -35,12 +45,15 @@ function Header() {
 
         <ul className='user-panel list-style-none'>
           <li>
-            <button className='user-panel__btn liked-btn'>
+            <button ref={ userModalOpenerBtn } onClick={ openUserModal } className='user-panel__btn liked-btn'>
+              
               <img src={ LikedThings } width='25' height='22' alt=""/>
-              <div className="user-modal">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aut qui neque harum aliquid   reprehenderit officia est unde quas? Dolore nihil natus delectus, maiores ab quam quo optio   perspiciatis deleniti!
-                </p>
+              <div id='user-modal' className="user-modal user-modal-active">
+                <ul className='list-style-none'>
+                  <li>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptatibus.
+                  </li>
+                </ul>
               </div>
             </button>
           </li>
