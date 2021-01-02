@@ -41,7 +41,7 @@ function Header() {
           <img src={ Logo } alt="site-logo" width='101' height='50' />
         </Link>
 
-        <a className='location-link' target='_blank' href="https://www.google.com/maps/place/Najot+Ta'lim/@41.3468947,69.213536,17z/data=!3m1!4b1!4m5!3m4!1s0x38ae8d54a1c04b77:0x76504a72d3e75a03!8m2!3d41.3468947!4d69.2157247">Санкт-Петербург, ул <br/> Большая Конюшенная, д 19</a>
+        <a className='location-link' rel='noreferrer' target='_blank' href="https://www.google.com/maps/place/Najot+Ta'lim/@41.3468947,69.213536,17z/data=!3m1!4b1!4m5!3m4!1s0x38ae8d54a1c04b77:0x76504a72d3e75a03!8m2!3d41.3468947!4d69.2157247">Санкт-Петербург, ул <br/> Большая Конюшенная, д 19</a>
 
         <ul className='user-panel list-style-none'>
           <li>

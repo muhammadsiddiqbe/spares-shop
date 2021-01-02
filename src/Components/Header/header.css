@@ -55,7 +55,6 @@ header {
   display: none;
   position: absolute;
   top: 150%;
-  /* bottom: -100%; */
   left: 100%;
   transform: translateX(-50%);
   background-color: #fff;

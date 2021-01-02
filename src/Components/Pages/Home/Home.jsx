@@ -1,10 +1,19 @@
-import { Fragment } from "react";
+import { Fragment } from "react"
+import HomeSlider from "../../Slider/Slider"
+
+import './Home.css'
+
+
 
 function HomePage() {
-  
+
   return(
     <Fragment>
-      <h1 className='center'>Home page</h1>
+      <div className="container">
+        <HomeSlider />
+
+      </div>
+      
     </Fragment>
   )
 }
